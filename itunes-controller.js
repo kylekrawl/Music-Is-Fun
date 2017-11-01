@@ -15,6 +15,7 @@ function ItunesController() {
     var genreStyles = itunesService.getGenreStyleClasses()
     var mostCommonGenreStyle = 'default'
 
+    // iterate through genreStyles, determine most common genre in songList
     for (var i = 0; i < songList.length; i++) {
       var song = songList[i]
       for (var styleType in genreStyles) {
@@ -31,9 +32,9 @@ function ItunesController() {
       var song = songList[i]
       console.log(mostCommonGenreStyle)
 
-      var albumArt = song.albumArt.replace('100x100bb', '500x500bb') //Increase image resolution
+      var albumArt = song.albumArt.replace('100x100bb', '400x400bb') //Increase image resolution
       var templates = {
-        'music-video': ` <div class="col-sm-12 col-md-6 flex v-center h-center">
+        'music-video': ` <div class="col-xs-6 flex v-center h-center">
                               <div id="song-wrapper" class="song-wrapper ${genreStyles[mostCommonGenreStyle].elements.songWrapper.styleClass} panel panel-default text-center">
                                 <div class="panel-body">
                                   <p class="song-title">${song.title}</p>
@@ -46,7 +47,7 @@ function ItunesController() {
                               </div>
                             </div>
                   `,
-        'song': ` <div class="col-sm-12 col-md-6 flex v-center h-center">
+        'song': ` <div class="col-xs-6 flex v-center h-center">
                               <div id="song-wrapper" class="song-wrapper ${genreStyles[mostCommonGenreStyle].elements.songWrapper.styleClass} panel panel-default text-center">
                                 <div class="panel-body">
                                   <img class="song-image" src="${albumArt}" alt="">

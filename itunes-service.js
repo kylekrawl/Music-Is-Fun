@@ -1,5 +1,7 @@
 function ItunesService() {
 
+  // Dictionary for applying styles based on dominant genre in song list (see draw() in controller)
+
   var genreStyleClasses = {
     default: {
       genres: ['default'],
@@ -75,7 +77,6 @@ function ItunesService() {
     }
   }
   
-
   this.getGenreStyleClasses = function getGenreStyleClasses() {
     return JSON.parse(JSON.stringify(genreStyleClasses))
   }

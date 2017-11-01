@@ -6,7 +6,8 @@ Base Styles
 
 body {
     background: #000;
-    color: #fff
+    color: #fff;
+    font-family: 'Jura', sans-serif;
 }
 
 /*
@@ -52,31 +53,32 @@ Header Row
 
 .header-row-background-default {
     background: #000;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url("images/leaf-motif.png") center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url("images/leaf-motif.png") center no-repeat;
     background-size: cover;
 }
 
 .header-row-background-alternate-1 {
     background: rgba(128, 21, 21);
-    background: linear-gradient(rgba(128, 21, 21, 0.7), rgba(128, 21, 21, 0.9)), url("images/leaf-motif.png") center no-repeat;
+    background: linear-gradient(rgba(128, 21, 21, 0.4), rgba(128, 21, 21, 0.9)), url("images/leaf-motif.png") center no-repeat;
     background-size: cover;
 }
 
 .header-row-background-alternate-2 {
     background: rgba(153, 51, 102);
-    background: linear-gradient(rgba(153, 51, 102, 0.7), rgba(153, 51, 102, 0.9)), url("images/leaf-motif.png") center no-repeat;
+    background: linear-gradient(rgba(153, 51, 102, 0.4), rgba(153, 51, 102, 0.9)), url("images/leaf-motif.png") center no-repeat;
     background-size: cover;
 }
 
 .header-row-background-alternate-3 {
     background: rgba(21, 24, 60);
-    background: linear-gradient(rgba(21, 24, 60, 0.7), rgba(21, 24, 60, 0.9)), url("images/leaf-motif.png") center no-repeat;
+    background: linear-gradient(rgba(21, 24, 60, 0.4), rgba(21, 24, 60, 0.9)), url("images/leaf-motif.png") center no-repeat;
     background-size: cover;
 }
 
 .main-title {
     font-size: 5em;
     margin-bottom: 5vh;
+    font-family: 'Forum', cursive;
 }
 
 .header-wrapper {
@@ -120,7 +122,7 @@ Songs Row
 .song-wrapper {
     margin-top: 10px;
     color: #fff;
-    /*width: 80%;*/
+    max-width: 80%;
     height: 400px;
     padding: 10px;
 }
@@ -164,6 +166,7 @@ Songs Row
 
 .album-price {
     font-size: 0.9em;
+    margin: 15px 0;
 }
 
 /*
