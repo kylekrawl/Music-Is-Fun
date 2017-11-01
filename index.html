@@ -5,22 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Music Is Fun!</title>
+    <title>.Songs</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/style.css">
 
 </head>
 
 <body>
-    <form class="form-inline" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
-        <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
-        <div class="form-group">
-            <input type="text" class="form-control" name="artist" placeholder="Artist Name" />
-            <button type="submit" class="btn btn-primary" id="get-music-button">Get Music</button>
+    <div class="container-fluid">
+        <div id='header-row' class="row header-row header-row-background-default text-center">
+            <div class="col-xs-offset-1 col-xs-10">
+                <div class="header-wrapper">
+                    <h1 class="main-title">.Songs</h1>
+                    <form class="form-inline" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
+                        <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="artist" placeholder="Artist Name" />
+                            <button type="submit" class="btn btn-main" id="get-music-button">Get Music</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-    </form>
-    <div id="songs">
-
+        <div id='songs-row' class="row songs-row songs-row-background-default">
+            <div class="col-xs-offset-1 col-xs-10">
+                <div id="songs" class="row">
+                </div>
+            </div>
+        </div>
     </div>
+
     <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
     <script src="itunes-service.js"></script>
     <script src="itunes-controller.js"></script>

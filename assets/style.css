@@ -1,0 +1,193 @@
+/*
+------------------
+Base Styles
+------------------
+*/
+
+body {
+    background: #000;
+    color: #fff
+}
+
+/*
+-------------------
+Grid / Flexbox
+-------------------
+*/
+
+.flex {
+    display: flex;
+}
+
+.flex.v-center {
+    align-items: center;
+}
+
+.flex.h-center {
+    justify-content: center;
+}
+
+.flex.h-left {
+    justify-content: left;
+}
+
+.flex.h-right {
+    justify-content: right;
+}
+
+.flex.h-space-between {
+    justify-content: space-between;
+}
+
+
+/*
+------------------
+Header Row
+------------------
+*/
+
+.header-row {
+    color: #fff;
+}
+
+.header-row-background-default {
+    background: #000;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url("images/leaf-motif.png") center no-repeat;
+    background-size: cover;
+}
+
+.header-row-background-alternate-1 {
+    background: rgba(153, 38, 0, 0.7);
+    background: linear-gradient(rgba(153, 38, 0, 0.7), rgba(153, 38, 0, 0.9)), url("images/leaf-motif.png") center no-repeat;
+    background-size: cover;
+}
+
+.header-row-background-alternate-2 {
+    background: rgba(153, 51, 102);
+    background: linear-gradient(rgba(153, 51, 102, 0.7), rgba(153, 51, 102, 0.9)), url("images/leaf-motif.png") center no-repeat;
+    background-size: cover;
+}
+
+.main-title {
+    font-size: 5em;
+    margin-bottom: 5vh;
+}
+
+.header-wrapper {
+    height: 40vh;
+    padding-top: 10vh;
+}
+
+.form-control:focus {
+    /* Overwrites the blue outline Bootstrap applies to form controls with focus. */
+    outline: none;
+    box-shadow: 0 0 7px #000 !important;
+    border: 1px solid #ccc !important;
+}
+
+/*
+------------------
+Songs Row
+------------------
+*/
+
+.songs-row {
+    min-height: 60vh;
+}
+
+.songs-row-background-default {
+    background: #262626
+}
+
+.songs-row-background-alternate-1 {
+    background: #cc3300
+}
+
+.songs-row-background-alternate-2 {
+    background: #ac3973
+}
+
+.song-wrapper {
+    margin-top: 10px;
+    color: #fff;
+    /*width: 80%;*/
+    height: 400px;
+    padding: 10px;
+}
+
+.song-wrapper-background-default {
+    background: #000;
+}
+
+.song-wrapper-background-alternate-1 {
+    background: #b32d00;
+}
+
+.song-wrapper-background-alternate-2 {
+    background: #73264d;
+    
+}
+
+.song-image {
+    width: 150px;
+    border: 2px solid #fff;
+    border-radius: 2%;
+    margin: 10px;
+}
+
+.song-title {
+    font-size: 1.2em;
+}
+
+.artist-name {
+    font-size: 1.1em;
+}
+
+.album-name {
+    font-size: 1em;
+}
+
+.album-price {
+    font-size: 0.9em;
+}
+
+/*
+------------------
+Buttons
+------------------
+*/
+
+.btn-main {
+    background: #000;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 2px;
+}
+
+.btn-main:active,
+.btn-main:focus {
+    outline: none;
+}
+
+.btn-main:hover {
+    background: #333333;
+    color: #fff;
+}
+
+/*
+------------------
+Controls
+------------------
+*/
+
+audio {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+video {
+    width: 300px;
+    max-width: 100%;
+    margin-bottom: 30px;
+}
