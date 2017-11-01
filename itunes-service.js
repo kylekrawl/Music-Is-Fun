@@ -20,7 +20,7 @@ function ItunesService() {
       }
     },
     alternate1: {
-      genres: ['Hip-Hop/Rap'],
+      genres: ['Hip-Hop/Rap', 'Rock'],
       count: 0,
       elements: {
         headerRow: {
@@ -38,7 +38,7 @@ function ItunesService() {
       }
     },
     alternate2: {
-      genres: ['Pop', 'Alternative', 'Electronic'],
+      genres: ['Pop', 'Alternative', 'R&B/Soul'],
       count: 0,
       elements: {
         headerRow: {
@@ -54,8 +54,27 @@ function ItunesService() {
           styleClass: 'song-wrapper-background-alternate-2'
         }
       }
+    },
+    alternate3: {
+      genres: ['Dance', 'Electronic'],
+      count: 0,
+      elements: {
+        headerRow: {
+          id: 'header-row',
+          styleClass: 'header-row-background-alternate-3'
+        },
+        songsRow: {
+          id: 'songs-row',
+          styleClass: 'songs-row-background-alternate-3'
+        },
+        songWrapper: {
+          id: 'song-wrapper',
+          styleClass: 'song-wrapper-background-alternate-3'
+        }
+      }
     }
   }
+  
 
   this.getGenreStyleClasses = function getGenreStyleClasses() {
     return JSON.parse(JSON.stringify(genreStyleClasses))

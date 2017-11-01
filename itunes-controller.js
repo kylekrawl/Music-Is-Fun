@@ -28,7 +28,7 @@ function ItunesController() {
     }
 
     for (var i = 0; i < songList.length; i++) {
-      
+      var song = songList[i]
       console.log(mostCommonGenreStyle)
 
       var albumArt = song.albumArt.replace('100x100bb', '500x500bb') //Increase image resolution
