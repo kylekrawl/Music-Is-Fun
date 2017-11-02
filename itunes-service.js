@@ -22,7 +22,7 @@ function ItunesService() {
       }
     },
     alternate1: {
-      genres: ['Hip-Hop/Rap', 'Rock'],
+      genres: ['Hip-Hop/Rap'],
       count: 0,
       elements: {
         headerRow: {
@@ -40,7 +40,7 @@ function ItunesService() {
       }
     },
     alternate2: {
-      genres: ['Pop', 'Alternative', 'R&B/Soul'],
+      genres: ['Pop', 'R&B/Soul'],
       count: 0,
       elements: {
         headerRow: {
@@ -72,6 +72,60 @@ function ItunesService() {
         songWrapper: {
           id: 'song-wrapper',
           styleClass: 'song-wrapper-background-alternate-3'
+        }
+      }
+    },
+    alternate4: {
+      genres: ['Folk', 'Country', 'Blues'],
+      count: 0,
+      elements: {
+        headerRow: {
+          id: 'header-row',
+          styleClass: 'header-row-background-alternate-4'
+        },
+        songsRow: {
+          id: 'songs-row',
+          styleClass: 'songs-row-background-alternate-4'
+        },
+        songWrapper: {
+          id: 'song-wrapper',
+          styleClass: 'song-wrapper-background-alternate-4'
+        }
+      }
+    },
+    alternate5: {
+      genres: ['Alternative', 'Classical'],
+      count: 0,
+      elements: {
+        headerRow: {
+          id: 'header-row',
+          styleClass: 'header-row-background-alternate-5'
+        },
+        songsRow: {
+          id: 'songs-row',
+          styleClass: 'songs-row-background-alternate-5'
+        },
+        songWrapper: {
+          id: 'song-wrapper',
+          styleClass: 'song-wrapper-background-alternate-5'
+        }
+      }
+    },
+    alternate6: {
+      genres: ['Rock'],
+      count: 0,
+      elements: {
+        headerRow: {
+          id: 'header-row',
+          styleClass: 'header-row-background-alternate-6'
+        },
+        songsRow: {
+          id: 'songs-row',
+          styleClass: 'songs-row-background-alternate-6'
+        },
+        songWrapper: {
+          id: 'song-wrapper',
+          styleClass: 'song-wrapper-background-alternate-6'
         }
       }
     }
