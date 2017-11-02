@@ -76,7 +76,7 @@ function ItunesService() {
       }
     },
     alternate4: {
-      genres: ['Folk', 'Country', 'Blues'],
+      genres: ['Folk', 'Country', 'Blues', 'World'],
       count: 0,
       elements: {
         headerRow: {
@@ -94,7 +94,7 @@ function ItunesService() {
       }
     },
     alternate5: {
-      genres: ['Alternative', 'Classical'],
+      genres: ['Classical', 'Holiday', 'Jazz', 'New Age'],
       count: 0,
       elements: {
         headerRow: {
