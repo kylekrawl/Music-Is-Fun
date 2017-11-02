@@ -150,11 +150,10 @@ function ItunesService() {
       var songList = response.results.map(function (song) {
         return {
           title: song.trackName,
-          albumArt: song.artworkUrl100, // Slightly better resolution than using .artworkUrl60
+          albumArt: song.artworkUrl100,
           artist: song.artistName,
           collection: song.collectionName,
           albumPrice: song.collectionPrice,
-          trackPrice: song.trackPrice,
           preview: song.previewUrl,
           currency: song.currency,
           fileType: song.kind,

@@ -11,37 +11,6 @@ body {
 }
 
 /*
--------------------
-Grid / Flexbox
--------------------
-*/
-
-.flex {
-    display: flex;
-}
-
-.flex.v-center {
-    align-items: center;
-}
-
-.flex.h-center {
-    justify-content: center;
-}
-
-.flex.h-left {
-    justify-content: left;
-}
-
-.flex.h-right {
-    justify-content: right;
-}
-
-.flex.h-space-between {
-    justify-content: space-between;
-}
-
-
-/*
 ------------------
 Header Row
 ------------------
@@ -150,10 +119,10 @@ Songs Row
 }
 
 .song-wrapper {
-    margin-top: 20px;
+    margin-top: 5px;
     color: #fff;
-    width: 80%;
-    height: 450px;
+    width: 90%;
+    height: 420px;
     padding: 10px;
 }
 

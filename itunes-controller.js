@@ -34,15 +34,17 @@ function ItunesController() {
       
       for (var prop in song) {
         if (song[prop] === undefined) {
-          console.log(song.title, prop)
           song[prop] = ''
-          console.log(song.fileType)
         }
+      }
+      
+      if (song.fileType === 'music-video' || song.fileType ==='feature-movie') {
+        song.fileType = 'video'
       }
 
       var albumArt = song.albumArt.replace('100x100bb', '400x400bb') //Increase image resolution
       var templates = {
-        'music-video': ` <div class="col-xs-6 flex v-center h-center">
+        'video': ` <div class="col-sm-6 flex v-center h-center">
                               <div id="song-wrapper" class="song-wrapper ${genreStyles[mostCommonGenreStyle].elements.songWrapper.styleClass} panel panel-default text-center">
                                 <div class="panel-body text-center">
                                   <p class="song-title">${song.title}</p>
@@ -55,20 +57,7 @@ function ItunesController() {
                               </div>
                             </div>
                             `,
-        'feature-movie': ` <div class="col-xs-6 flex v-center h-center">
-                  <div id="song-wrapper" class="song-wrapper ${genreStyles[mostCommonGenreStyle].elements.songWrapper.styleClass} panel panel-default text-center">
-                    <div class="panel-body text-center">
-                      <p class="song-title">${song.title}</p>
-                      <p class="artist-name">${song.artist}</p>
-                      <video src="${song.preview}" controls></video>
-                      <p class="album-title">${song.collection}</p>               
-                      <p class="album-price">Album Price: 
-                      ${(song.currency === 'USD') ? ('$' + song.albumPrice) : (song.albumPrice + ' ' + song.currency)}</p>
-                    </div>
-                  </div>
-                </div>
-                `,
-        'song': ` <div class="col-xs-6 flex v-center h-center">
+        'song': ` <div class="col-sm-6 flex v-center h-center">
                               <div id="song-wrapper" class="song-wrapper ${genreStyles[mostCommonGenreStyle].elements.songWrapper.styleClass} panel panel-default text-center">
                                 <div class="panel-body">
                                   <img class="song-image" src="${albumArt}" alt="">
@@ -81,7 +70,7 @@ function ItunesController() {
                                 </div>
                               </div>
                             </div>
-                  `
+                            `
       }
       if (templates.hasOwnProperty(song.fileType)) {
         template += templates[song.fileType]
