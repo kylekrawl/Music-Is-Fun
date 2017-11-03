@@ -1,4 +1,26 @@
 /*
+-------------------
+Grid / Flexbox
+-------------------
+*/
+
+.flex {
+    display: flex;
+}
+
+.flex.v-center {
+    align-items: center;
+}
+
+.flex.h-center {
+    justify-content: center;
+}
+
+.flex.h-left {
+    justify-content: left;
+}
+
+/*
 ------------------
 Base Styles
 ------------------
@@ -64,13 +86,13 @@ Header Row
 
 .main-title {
     font-size: 5em;
-    margin-bottom: 5vh;
+    margin-bottom: 30px;
     font-family: 'Forum', cursive;
 }
 
 .header-wrapper {
-    height: 40vh;
-    padding-top: 10vh;
+    height: 400px;
+    padding-top: 150px;
 }
 
 .form-control:focus {
@@ -87,7 +109,8 @@ Songs Row
 */
 
 .songs-row {
-    min-height: 60vh;
+    min-height: 600px;
+    padding-top: 30px;
 }
 
 .songs-row-background-default {
