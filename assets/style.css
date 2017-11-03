@@ -1,4 +1,16 @@
 /*
+------------------
+Base Styles
+------------------
+*/
+
+body {
+    background: #000;
+    color: #fff;
+    font-family: 'Jura', sans-serif;
+}
+
+/*
 -------------------
 Grid / Flexbox
 -------------------
@@ -14,22 +26,6 @@ Grid / Flexbox
 
 .flex.h-center {
     justify-content: center;
-}
-
-.flex.h-left {
-    justify-content: left;
-}
-
-/*
-------------------
-Base Styles
-------------------
-*/
-
-body {
-    background: #000;
-    color: #fff;
-    font-family: 'Jura', sans-serif;
 }
 
 /*
@@ -109,7 +105,7 @@ Songs Row
 */
 
 .songs-row {
-    min-height: 600px;
+    min-height: 700px;
     padding-top: 30px;
 }
 
